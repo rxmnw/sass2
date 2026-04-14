@@ -1,0 +1,130 @@
+$maincolor: #217BF4;
+
+@mixin container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+@mixin flex{
+    display: flex;
+        align-items: center;
+        gap: 10px;
+}
+@mixin buttons{
+    background-color: $maincolor;
+    padding: 15px 40px;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+}
+@mixin column{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    @include container();
+    div{
+        display: flex;
+        gap: 50px;
+        align-items: center;
+        nav{
+            display: flex;
+            gap: 20px;
+        }
+    }
+    input{
+        border: none;
+        outline: none;
+        border-bottom: 1px solid gray;
+    }
+
+}
+.section1{
+    @include container();
+    aside{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: start;
+        h1{
+            font-size: 50px;
+        }
+        button{
+            @include buttons();
+            background-color: #E8F1FE;
+            color: $maincolor;
+        }
+        div{
+            button:first-child{
+                @include buttons;
+            }
+            button:last-child{
+                @include buttons;
+                background-color: white;
+                border: 1px solid $maincolor;
+                color: $maincolor;
+            }
+        }
+    }
+}
+.section2{
+    @include container();
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+       p:first-child{
+color: $maincolor;
+font-size: 25px;
+        }
+    h1{
+        font-size: 40px;
+    }
+   .p{
+    width: 450px;
+    color: grey;
+    font-size: 20px;
+   }
+    .s{
+display:flex ;
+align-items: center;
+gap: 20px;
+.ss{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+    }
+    aside{
+      display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: start;  
+        .rowgap{
+            display: flex;
+            flex-direction: column;
+            row-gap: 8px;
+            font-weight: 600;
+            font-size: 18px;
+            p:nth-child(1){
+                font-size: 18px;
+            }
+        } 
+     
+    }
+}
+.section3{
+
+
+    .flex{
+        @include flex;
+    }
+}

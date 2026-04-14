@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+header div {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+header div nav {
+  display: flex;
+  gap: 20px;
+}
+header input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+}
+
+.section1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+.section1 aside {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: start;
+}
+.section1 aside h1 {
+  font-size: 50px;
+}
+.section1 aside button {
+  background-color: #217BF4;
+  padding: 15px 40px;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  background-color: #E8F1FE;
+  color: #217BF4;
+}
+.section1 aside div button:first-child {
+  background-color: #217BF4;
+  padding: 15px 40px;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+}
+.section1 aside div button:last-child {
+  background-color: #217BF4;
+  padding: 15px 40px;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  background-color: white;
+  border: 1px solid #217BF4;
+  color: #217BF4;
+}
+
+.section2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.section2 p:first-child {
+  color: #217BF4;
+  font-size: 25px;
+}
+.section2 h1 {
+  font-size: 40px;
+}
+.section2 .p {
+  width: 450px;
+  color: grey;
+  font-size: 20px;
+}
+.section2 .s {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.section2 .s .ss {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.section2 aside {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: start;
+}
+.section2 aside .rowgap {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  font-weight: 600;
+  font-size: 18px;
+}
+.section2 aside .rowgap p:nth-child(1) {
+  font-size: 18px;
+}
+
+.section3 .flex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}/*# sourceMappingURL=style.css.map */
