@@ -1,5 +1,5 @@
 $maincolor: #217BF4;
-
+$h1color:#0A093D;
 @mixin container{
     display: flex;
     justify-content: space-between;
@@ -25,6 +25,10 @@ $maincolor: #217BF4;
     display: flex;
     flex-direction: column;
     row-gap: 20px;
+}
+@mixin colorp{
+color: #656464;
+font-size: 18px;
 }
 *{
     margin: 0;
@@ -78,7 +82,7 @@ header{
 }
 .section2{
     @include container();
-    margin-top: 100px;
+    margin-top: 150px;
     display: flex;
     justify-content: space-between;
        p:first-child{
@@ -122,9 +126,60 @@ gap: 20px;
     }
 }
 .section3{
+@include container();
+    margin-top: 150px;
+    display: flex;
+justify-content: space-between;
+    .s3flex{
+    display: flex;
+    gap: 40px
 
-
+}
     .flex{
         @include flex;
+
+  p{
+    color: grey;
+    span{
+        color:$maincolor;
+        font-size:16px;
+        font-weight: 600;
+    }
+  }
+    }
+    .card{
+border-radius: 10px;
+        width: 240px;
+        box-shadow: 0px 0px 5px black;
+        height: 250px;
+        padding: 20px;
+        @include column();
+      .pp {
+           @include colorp;
+        }
+        .pj{
+            color: $maincolor;
+            font-size: 18px;
+        }
+    }
+}
+aside{
+    width: 400px;
+    @include column();
+    p:first-child{
+color: $maincolor;
+
+    }
+    p:nth-child(3){
+        color: grey;
+        font-size: 20px;
+    }
+    button{
+        @include buttons();
+        width: 270px;
+    }
+    h1{
+        color: $h1color;
+        font-size: 40px;
     }
 }

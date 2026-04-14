@@ -80,7 +80,7 @@ header input {
   max-width: 1200px;
   margin: auto;
   padding: 20px;
-  margin-top: 100px;
+  margin-top: 150px;
   display: flex;
   justify-content: space-between;
 }
@@ -123,8 +123,76 @@ header input {
   font-size: 18px;
 }
 
+.section3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+.section3 .s3flex {
+  display: flex;
+  gap: 40px;
+}
 .section3 .flex {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+.section3 .flex p {
+  color: grey;
+}
+.section3 .flex p span {
+  color: #217BF4;
+  font-size: 16px;
+  font-weight: 600;
+}
+.section3 .card {
+  border-radius: 10px;
+  width: 240px;
+  box-shadow: 0px 0px 5px black;
+  height: 250px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.section3 .card .pp {
+  color: #656464;
+  font-size: 18px;
+}
+.section3 .card .pj {
+  color: #217BF4;
+  font-size: 18px;
+}
+
+aside {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+aside p:first-child {
+  color: #217BF4;
+}
+aside p:nth-child(3) {
+  color: grey;
+  font-size: 20px;
+}
+aside button {
+  background-color: #217BF4;
+  padding: 15px 40px;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  width: 270px;
+}
+aside h1 {
+  color: #0A093D;
+  font-size: 40px;
 }/*# sourceMappingURL=style.css.map */
