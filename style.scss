@@ -338,3 +338,56 @@ div{
 }
 
 }
+.section7{
+@include container();
+display: flex;
+flex-direction: column;
+row-gap: 50px;
+margin-top: 150px;
+    img{
+        width: 300px;
+    }
+    .s77{
+        p{
+            color: $maincolor;
+                text-align: center;
+                font-size: 20px;
+
+        }
+    h1{
+    color: $h1color;
+    text-align: center;
+    font-size: 40px;
+    }
+    }
+    .s7cards{
+display: flex;
+gap: 120px;
+        .s7card{
+            width: 250px;
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+             h4{
+                color: $h1color;
+                width: 200px;
+margin: auto;  
+           }
+             p{
+                color: grey;
+                font-size: 16px;
+                margin-left: 25px;
+             }
+             .s7fl{
+display: flex;
+                img{
+                    width: 30px;
+                    height: 5px;
+                    margin-top: 5px;
+
+                }
+             }
+        }
+    }
+}
