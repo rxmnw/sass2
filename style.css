@@ -352,4 +352,31 @@ aside h1 {
 .section5 .s5cards .s5card p {
   color: #656464;
   font-size: 18px;
+}
+
+.section6 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  margin-top: 150px;
+}
+.section6 .aside p:first-child {
+  color: #217BF4;
+}
+.section6 .aside h1 {
+  color: #0A093D;
+}
+.section6 .aside p:nth-child(3) {
+  color: #656464;
+  font-size: 18px;
+}
+.section6 div {
+  display: flex;
+  align-items: center;
+}
+.section6 .s6img {
+  width: 690px;
 }/*# sourceMappingURL=style.css.map */

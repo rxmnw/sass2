@@ -315,3 +315,26 @@ img{
         }
     }
 }
+.section6{
+@include container();
+margin-top: 150px;
+.aside{
+p:first-child{
+    color: $maincolor;
+}
+h1{
+    color:$h1color
+}
+p:nth-child(3){
+    @include colorp();
+}
+}
+div{
+    display: flex;
+    align-items: center;
+}
+.s6img{
+    width: 690px;
+}
+
+}
